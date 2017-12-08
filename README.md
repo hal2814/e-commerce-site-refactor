@@ -13,3 +13,4 @@ To set up:
 
 'Nil can't be coerced into BigDecimal'
   * Changed type value of 'total_price' and 'decimal' in Orders model to decimals instead of strings. When multiplying the price by quantity, quantity needed to be converted to a float.
+  * Number of items now properly appears when an item is added to cart
