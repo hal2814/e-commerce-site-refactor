@@ -12,4 +12,4 @@ To set up:
 # Bug Fixes
 
 'Nil can't be coerced into BigDecimal'
-  * Changed type value of 'total_price' and 'decimal' in Orders model to decimals instead of strings.
+  * Changed type value of 'total_price' and 'decimal' in Orders model to decimals instead of strings. When multiplying the price by quantity, quantity needed to be converted to a float.
