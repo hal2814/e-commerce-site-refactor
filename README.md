@@ -11,4 +11,5 @@ To set up:
 
 # Bug Fixes
 
-* Changed type value of 'total_price' and 'decimal' in Orders model to decimals instead of strings.
+'Nil can't be coerced into BigDecimal'
+  * Changed type value of 'total_price' and 'decimal' in Orders model to decimals instead of strings.
