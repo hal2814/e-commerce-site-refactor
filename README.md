@@ -7,3 +7,8 @@ To set up:
 * `rake db:setup`
 
 * Sorry, didn't get around to tests. It mostly works. There might be a few bugs.
+
+
+# Bug Fixes
+
+* Changed type value of 'total_price' and 'decimal' in Orders model to decimals instead of strings.
