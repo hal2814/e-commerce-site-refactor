@@ -1,13 +1,11 @@
-# README
+# E-Commerce Application
 
-E-commerce site. Uses `bcrypt` and `materialize`. There's a seed file. Set up your own admin. If you have questions, I'll be in Bali with no email. Ask someone else.
+Maintenance by Nate McGregor
+This is an exercise for the purpose of debugging, refactoring, and updating functionality on an AJAX/Rails project.
 
-To set up:
+## Features added
 
-* `rake db:setup`
-
-* Sorry, didn't get around to tests. It mostly works. There might be a few bugs.
-
+* Added ability to render details and add an item to cart when a product name is clicked.
 
 ## Bug Fixes
 
@@ -17,3 +15,12 @@ Items not adding to cart: 'Nil can't be coerced into BigDecimal'
   * Converted quantity to float before multiplying to view cart properly.
 
 Details of product not showing when clicked
+
+
+### Technology Used
+
+* bcrypt
+* materialize
+* Ajax
+* Rails
+* Ruby
