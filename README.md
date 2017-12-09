@@ -6,6 +6,7 @@ This is an exercise for the purpose of debugging, refactoring, and updating func
 ## Features added
 
 * Added ability to render details and add an item to cart when a product name is clicked.
+* Added stylized flash messages using Materialize.
 
 ## Bug Fixes
 
@@ -19,7 +20,7 @@ Details of product not showing when clicked
 
 ### Technology Used
 
-* bcrypt
+* Bcrypt
 * materialize
 * Ajax
 * Rails
