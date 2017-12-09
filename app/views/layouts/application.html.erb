@@ -24,8 +24,8 @@
   </nav>
 
   <body>
-      <script>Materialize.toast('<%= flash[:alert] %>', 4000)</script>
-      <script>Materialize.toast('<%= flash[:notice] %>', 4000)</script>
+      <script>Materialize.toast('<%= flash[:alert] %>', 4000, 'rounded')</script>
+      <script>Materialize.toast('<%= flash[:notice] %>', 4000, 'rounded')</script>
     <div class="container">
       <%= yield %>
     </div>
