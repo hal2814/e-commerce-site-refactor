@@ -4,15 +4,8 @@
   <div class="section">
     <% @products.each do |product| %>
       <div class="col s4">
-        <h4><%= link_to product.name, remote: true %></h4>
-        <span id="product-detail">
-        <p><%= product.description %></p>
-        <p><%= number_to_currency product.price %></p>
-        <%= form_for @order_item do |f| %>
-          <%= f.hidden_field :product_id, value: product.id %>
-          <span><%= f.number_field :quantity, placeholder: "Oops, breaks if you don't add input!" %></span>
-          <span class="waves-effect waves-light btn"><%= f.submit "Add to cart" %></span>
-        <% end %>
+        <h4><%= link_to product.name, product_path(product.id), remote: true %></h4>
+        <span id="product-detail-<%= product.id %>"></span>
       </div>
     <% end %>
   </div>
