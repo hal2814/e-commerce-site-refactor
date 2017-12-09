@@ -23,7 +23,10 @@ class OrderItemsController < ApplicationController
     @item.destroy
     @order.save
     flash[:notice] = "Product removed from your order!"
-    redirect_to cart_path
+    respond_to do |format|
+      format.html { redirect_to cart_path }
+      format.js
+    end
   end
 
   private
