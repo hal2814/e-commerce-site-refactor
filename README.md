@@ -7,7 +7,8 @@ This is an exercise for the purpose of debugging, refactoring, and updating func
 
 * Added ability to render details and add an item to cart when a product name is clicked.
 * Added stylized flash messages using Materialize.
-* Ensures users can't order negative amount of items. 
+* Ensures users can't order negative amount of items.
+* Flash messages when user signs in, up, or out.
 
 ## Bug Fixes
 
