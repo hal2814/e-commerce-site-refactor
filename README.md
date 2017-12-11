@@ -9,6 +9,8 @@ This is an exercise for the purpose of debugging, refactoring, and updating func
 * Added stylized flash messages using Materialize.
 * Ensures users can't order negative amount of items.
 * Flash messages when user signs in, up, or out.
+* Product validations.
+
 
 ## Bug Fixes
 
