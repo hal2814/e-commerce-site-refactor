@@ -10,7 +10,7 @@ This is an exercise for the purpose of debugging, refactoring, and updating func
 * Ensures users can't order negative amount of items.
 * Flash messages when user signs in, up, or out.
 * Product validations.
-
+* User signup validations for password minimums/maximums, confirmation
 
 ## Bug Fixes
 
