@@ -15,4 +15,6 @@ class Seed
   end
 end
 
+p "Created #{Product.count} products"
+
 Seed.begin
