@@ -6,6 +6,11 @@
       <div class="col s4">
         <h4><%= link_to product.name, product_path(product.id), remote: true %></h4>
         <div id="product-detail-<%= product.id %>" class="hidden">
+          <% if current_user %>
+            <% if current_user.admin %>
+              <p><%= link_to "Delete", product_path(product), :data => {:confirm => "You sure?", :method => "delete"}  %></p>
+            <% end %>
+          <% end %>
           <%= image_tag product.image_url %>
           <p><%= product.description %></p>
           <p><%= number_to_currency product.price %></p>

@@ -5,9 +5,9 @@ class ProductsController < ApplicationController
     @product = Product.find(params[:id])
     @order_item = current_order.order_items.new
     respond_to do |format|
-        format.html { redirect_to '/' }
-        format.js
-      end
+      format.html { redirect_to '/' }
+      format.js
+    end
   end
 
   def index
@@ -26,6 +26,27 @@ class ProductsController < ApplicationController
       redirect_to '/'
     else
       render :new
+    end
+  end
+
+  def update
+    @product = Product.find(params[:id])
+    @product.update_attributes(product_params)
+    if @product.save
+      flash[:notice] = "Product Updated!"
+    else
+      flash[:alert] = "Product could not be updated."
+    end
+  end
+
+  def destroy
+    @product = Product.find(params[:id])
+    @product.destroy
+    flash[:notice] = "Product removed."
+    binding.pry
+    respond_to do |format|
+      format.html { redirect_to products_path }
+      format.js
     end
   end
 
