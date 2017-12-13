@@ -37,6 +37,10 @@ class ProductsController < ApplicationController
     else
       flash[:alert] = "Product could not be updated."
     end
+    respond_to do |format|
+      format.html { redirect_to products_path }
+      format.js
+    end
   end
 
   def destroy

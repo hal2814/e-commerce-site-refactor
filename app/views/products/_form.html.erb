@@ -1,0 +1,15 @@
+<%= form_for @product do |f| %>
+<div class= "row">
+  <div class= "col s4">
+    <%= f.label :name %>
+    <%= f.text_field :name, :class => "form-control" %>
+    <%= f.label :description %>
+    <%= f.text_field :description, :class => "form-control" %>
+    <%= f.label :price %>
+    <%= f.number_field :price, :type =>' decimal', :class => "form-control" %>
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url, :class => "form-control" %>
+    <%= f.submit %>
+    <% end %>
+  </div>
+</div>

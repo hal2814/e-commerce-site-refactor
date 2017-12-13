@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   post '/sign_in' => 'sessions#create'
   get 'sign_out' => 'sessions#destroy'
 
+  post '/update' => 'products#update'
+
   resources :products
   resources :order_items
   resource :cart, only: [:show]
