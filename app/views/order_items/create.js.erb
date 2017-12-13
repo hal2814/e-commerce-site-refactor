@@ -1,2 +1,4 @@
+
 console.log("***reached order_items js***")
-$('#orders').html('<%= j render cart_items %>');
+
+$('#orders').html('<%= link_to Cart | Total items: #{ cart_items }, cart_path %>');
