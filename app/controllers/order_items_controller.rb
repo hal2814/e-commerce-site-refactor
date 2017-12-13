@@ -13,13 +13,10 @@ class OrderItemsController < ApplicationController
       flash[:alert] = "Product could not be added to your order."
     end
     session[:order_id] = @order.id
-<<<<<<< HEAD
     respond_to do |format|
       format.html { redirect_to products_path }
       format.js
     end
-=======
->>>>>>> 03ecad17274e0cb8553744496915506060b53cad
   end
 
   def update
