@@ -5,11 +5,14 @@ class OrderItemsController < ApplicationController
     @item = @order.order_items.new(item_params)
     if @order.save
       flash[:notice] = "Product added to your order!"
+      respond_to do |format|
+        format.html { redirect_to products_path }
+        format.js
+      end
     else
       flash[:alert] = "Product could not be added to your order."
     end
     session[:order_id] = @order.id
-    redirect_to products_path
   end
 
   def update
