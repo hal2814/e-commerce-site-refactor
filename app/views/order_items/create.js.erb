@@ -1,4 +1,5 @@
 
 console.log("***reached order_items js***")
 
-$('#orders').html('<%= link_to Cart | Total items: #{ cart_items }, cart_path %>');
+$('#cart-number').html('<%= j render "layouts/cartnum" %>');
+$('#alerts').html('<%= j render "layouts/alerts" %>');

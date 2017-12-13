@@ -1,2 +1,3 @@
 console.log("reached cart delete")
-$('#orders').html('<%= j render cart_items %>');
+$('#orders').html('<%= j render "carts/show" %>');
+$('#alerts').html('<%= j render "layouts/alerts" %>');
