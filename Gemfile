@@ -43,7 +43,6 @@ group :development, :test do
   gem 'byebug', platform: :mri
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  gem 'capybara'
   gem 'factory_bot_rails'
   gem 'simplecov', :require => false, :group => :test
   gem 'dotenv-rails'
